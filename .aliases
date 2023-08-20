@@ -1,2 +1,4 @@
+#!/usr/bin/env bash
+
 alias get-gh-org="/$HOME/.scripts/github/download-org.sh"
 alias curltime="curl -w \"@$HOME/.curl-format.txt\" -o /dev/null -s "
