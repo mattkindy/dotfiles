@@ -1,0 +1,5 @@
+[user]
+	email = <matt.kindy.ii+work@gmail.com>
+	name = Matt Kindy
+[alias]
+    branch-diff = "!f() { git log --abbrev-commit --pretty=format:'%H | %aI | %s | %aN' --graph --cherry-pick --left-right $1...$2; }; f"
