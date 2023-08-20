@@ -219,6 +219,10 @@ if [[ "$RUN_AS_ROOT" = true ]]; then
   killall mds > /dev/null 2>&1
 fi
 
+# This will change Spotlight's binding to Option+Space
+defaults write com.apple.symbolichotkeys AppleSymbolicHotKeys -dict-add 64 '<dict><key>enabled</key><true/><key>value</key><dict><key>type</key><string>standard</string><key>parameters</key><array><integer>32</integer><integer>32</integer><integer>524288</integer></array></dict></dict>'
+
+
 ###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################

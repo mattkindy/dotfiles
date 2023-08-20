@@ -1,0 +1,12 @@
+# Bash completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+# Git autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+# AWS autocomplete
+if which aws_completer &>/dev/null; then
+  complete -C aws_completer aws
+fi
